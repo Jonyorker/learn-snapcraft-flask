@@ -1,0 +1,17 @@
+name: jakerye-learn-snapcraft-python 
+version: '1.0.0'
+summary: Learn snapcraft python via flask hello world
+description: |
+  This is the a very simple snap that displays hello world on webpage server via 
+  python flask.
+
+grade: stable 
+confinement: devmode
+
+parts:
+  hello-world:
+    source: .
+      #https://github.com/jakerye/learn-snapcraft-python.git
+    # source-tag: v1.1.3
+    plugin: python
+
