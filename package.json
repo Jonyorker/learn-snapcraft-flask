@@ -1,0 +1,9 @@
+{
+  "name": "learn-snapcraft-flask",
+  "version": "1.0.0",
+  "description": "Flask hello world app",
+  "license": "MIT",
+  "private": true,
+  "bin": "./main.js",
+  "dependencies": {}
+}

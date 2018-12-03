@@ -5,13 +5,24 @@ description: |
   This is the a very simple snap that displays hello world on webpage server via 
   python flask.
 
-grade: stable 
+grade: devel 
 confinement: devmode
 
-parts:
-  hello-world:
-    source: .
-      #https://github.com/jakerye/learn-snapcraft-python.git
-    # source-tag: v1.1.3
-    plugin: python
+apps:
+  jakerye-learn-snapcraft-flask:
+    command: flask run
+    environment:
+      FLASK_APP: hello.py
+    plugs: [network-bind]
 
+parts:
+  flask-app:
+    source: .
+    plugin: python
+    python-version: python3
+
+
+# https://github.com/jakerye/learn-snapcraft-python.git
+# source-tag: v1.1.3
+# daemon: simple
+# restart-condition: always

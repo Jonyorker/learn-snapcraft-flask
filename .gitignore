@@ -1,6 +1,14 @@
+# Python
+*.pyc
 venv/
+
+# Setuptools
+*.egg-info
 build/
 dist/
-*.egg-info
+
+# Snapcraft
+*.snap
 parts/
-*.pyc
+prime/
+stage/
