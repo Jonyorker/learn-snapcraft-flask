@@ -1,2 +1,2 @@
-# learn-snapcraft-python
-Introduction to creating ubuntu snaps with a python app.
+# learn-snapcraft-flast
+Introduction to creating ubuntu snaps with a python flask app.
