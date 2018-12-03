@@ -1,6 +1,6 @@
-name: jakerye-learn-snapcraft-python 
+name: jakerye-learn-snapcraft-flask 
 version: '1.0.0'
-summary: Learn snapcraft python via flask hello world
+summary: Learn snapcraft with python flask app
 description: |
   This is the a very simple snap that displays hello world on webpage server via 
   python flask.
