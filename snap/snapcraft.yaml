@@ -10,19 +10,18 @@ confinement: devmode
 
 apps:
   jakerye-learn-snapcraft-flask:
+    plugs: [network-bind]
+    daemon: simple
+    restart-condition: always
     command: flask run
     environment:
       FLASK_APP: hello.py
-    plugs: [network-bind]
-
+    
 parts:
   flask-app:
     source: .
     plugin: python
     python-version: python3
 
-
 # https://github.com/jakerye/learn-snapcraft-python.git
 # source-tag: v1.1.3
-# daemon: simple
-# restart-condition: always
