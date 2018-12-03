@@ -3,17 +3,17 @@ version: '1.0.0'
 summary: Learn snapcraft with python flask app
 description: |
   This is the a very simple snap that displays hello world on webpage server via 
-  python flask.
+  python flask It hosts on port 5000. The easiest way to expose it is via serveo.
 
-grade: devel 
-confinement: devmode
+grade: stable 
+confinement: strict
 
 apps:
   jakerye-learn-snapcraft-flask:
-    plugs: [network-bind]
+    command: flask run
     daemon: simple
     restart-condition: always
-    command: flask run
+    plugs: [network-bind]
     environment:
       FLASK_APP: hello.py
     
@@ -22,6 +22,3 @@ parts:
     source: .
     plugin: python
     python-version: python3
-
-# https://github.com/jakerye/learn-snapcraft-python.git
-# source-tag: v1.1.3
