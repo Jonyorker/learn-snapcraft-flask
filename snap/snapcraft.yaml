@@ -1,4 +1,5 @@
 name: jakerye-learn-snapcraft-flask 
+base: core18
 version: '1.0.0'
 summary: Learn snapcraft with python flask app
 description: |
@@ -16,7 +17,9 @@ apps:
     plugs: [network-bind]
     environment:
       FLASK_APP: hello.py
-    
+      LC_ALL: C.UTF-8
+      LANG: C.UTF-8
+
 parts:
   flask-app:
     source: .
