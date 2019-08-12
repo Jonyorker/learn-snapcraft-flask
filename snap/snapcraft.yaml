@@ -1,4 +1,4 @@
-name: jakerye-learn-snapcraft-flask 
+name: jy-learn-snapcraft-flask 
 version: '1.0.0'
 summary: Learn snapcraft with python flask app
 description: |
@@ -9,7 +9,7 @@ grade: stable
 confinement: strict
 
 apps:
-  jakerye-learn-snapcraft-flask:
+  jy-learn-snapcraft-flask:
     command: flask run
     daemon: simple
     restart-condition: always
